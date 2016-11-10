@@ -1,0 +1,421 @@
+/* GOOGLE FONTS */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+}
+.container
+{
+    overflow-y:hidden;
+}
+
+
+/* Start of main style */
+body
+{
+  font-size: 2rem;
+    background-image: url("media/images/bg.png");
+    height:100%;
+    padding-bottom: 10rem;
+    position: relative;
+}
+p,h1,h2,h3,h4,span{
+    
+text-align: left;
+}
+.clear:after
+{
+    clear:both;
+    display: table;
+    content:'';
+}
+.content
+{
+    max-width: 1020px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.content article{
+    text-align: left;
+    display:flex;
+    justify-content: flex-start;
+    
+}
+.content article img
+{
+    margin-right:3rem;
+}
+header
+{
+    background-color: rgb(0,0,0);
+    width:100%;
+    
+    
+}
+header .content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .content img
+{
+    float: right;
+    margin:0 0.2rem;
+    position: relative;
+}
+
+.logo
+{
+    display:block;
+    float: left;
+    top:0;
+    
+}
+.social-media{
+    width:100%;
+    z-index: 2;
+}
+
+.social-media img
+{
+    transition: transform 1s;
+    -o-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+ 
+}
+
+.social-media img:hover
+{
+    transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+nav
+{
+    width:100%;
+    text-align: center;
+    display: inline;
+    
+}
+
+nav ul
+{
+  
+    list-style: none;
+    display:inline-block;
+}
+
+nav li
+{
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 0.7rem;
+    line-height: 92px;
+}
+
+nav ul li a 
+{
+    color: rgb(225,225,225);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    font-size:2rem;
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+nav ul a:hover
+{
+    color: rgb(0,221,0)
+}
+
+nav ul a:active{
+    color:rgb(0,221,0);
+}
+
+.icon
+{
+    display:inline-block;
+    float:right;
+}
+
+.hero img
+{
+    float:left;
+margin-bottom:5rem;
+}
+
+.banner
+{
+    margin: 2rem 0 2rem 0;
+    position: relative;
+    overflow:hidden;
+}
+
+  .overlay
+    {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        padding:2rem 1rem;
+        color:rgb(255,255,255);
+    }
+.overlay h1
+{
+    text-align:left;
+}
+
+h1  
+{ 
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project{
+    padding: 1rem 0 5rem 0;
+    display: relative;
+    max-width: 1020px;
+}
+.project a img{
+    float:left;
+    width:33%;
+    margin:0.1rem;
+}
+
+.case .project img 
+{
+    float: left;
+    width: 33%;
+    margin: 0.1rem;
+}
+
+article{
+    padding: 1rem 0 0 0;
+}
+
+article img{
+    display:inline-block;
+    align-items: left;
+}
+
+article .ainfo{
+    display:inline-block;
+    align-items: right;
+}
+
+.blogs
+{
+    margin: 0 0 2rem 0;
+}
+
+footer
+{ 
+    background-color: rgb(114,114,114);
+    height: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    
+}
+footer a
+{
+    text-decoration: none;
+    color: rgb(225,225,225);
+     -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+footer a:hover
+{
+    color: rgb(0,211,0);
+}
+
+/* Media Queries */
+
+    /* Large tablet or small desktop/large desktop */
+@media only screen and (max-width: 1019px)
+{
+    
+    .main
+    {
+        margin-top: 0;
+    }
+    
+    .banner img
+    {
+        max-width: 100%;
+        max-height: auto;
+        min-height: 250px;
+        margin: 0 0 0.2 0;
+    }
+    
+    .sub
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sub img{
+        min-width: 90%;
+        
+    }
+}
+
+/*Query for Tablet */
+@media only screen and (max-width: 879px)
+{
+    nav ul li
+    {
+        font-size: 2.1rem;
+    }
+    
+    .project a img{
+        width:49%;
+    }
+    .content article
+    {
+        flex-wrap: wrap;
+    }
+    
+}
+
+/*Query for Mobile */
+@media only screen and (max-width: 780px)
+{
+    nav
+    {
+        width: auto;
+    }
+    
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    nav li
+    {
+        font-size: 2.3rem;
+    }
+    
+    header .content
+    {
+        flex-direction: column;
+    }
+    
+    header img
+    {
+        float: left;
+    }
+    
+    header .content a img
+    {
+    top:34px;
+    }
+    
+    .content
+    {
+        margin-bottom: 0;
+    }
+    
+    .social-media{
+        display: flex;
+        justify-content: center;
+        margin:1rem 0;
+        flex-direction: row-reverse
+    }
+    
+    h1
+    {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .banner
+    {
+        margin: 0 0 0.2rem 0;
+      
+        
+    }
+}
+@media only screen and (max-width:608px)
+{
+    .content article
+    {
+        justify-content: center;
+    }
+    .content article img
+    {
+        margin:1rem;
+    }
+    .ainfo
+    {
+        margin-right:10rem;
+    }
+    .overlay
+    {
+        font-size: 1.6rem;
+    }
+}
+
+/*Responsive banner */
+@media only screen and (max-width:508px)
+{
+    
+    .banner
+    {
+        /*min-width: 508px;*/
+        overflow: hidden;
+        align-items: center;
+          position: relative;
+        right:calc(92px  5vw);
+    }
+  
+    .project a img{
+        width:100%;
+    }
+    .project{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .overlay
+    {
+        font-size: 1.3rem;
+    }
+}

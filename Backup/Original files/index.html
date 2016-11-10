@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+ <meta name="description" content="portfolio, photography, design, gaming and football">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ross Taylor</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+
+<!-- JQUERY & UNSLIDER -->    
+    
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://unslider.com/unslider.min.js"></script>
+
+<!-- END OF JQUERY & UNSLIDER -->         
+</head>      
+<body>
+
+<!-- START OF HEADER -->    
+    
+<div class="wrapper">
+<header>
+    <a href="#content"><p id="top">skip to content</p></a>
+<a href="index.html">
+<img id="logo" src="media/images/logo.gif" width='120' height='77' title="RDT Media logo" alt="RDT Media logo">
+</a>
+
+<nav>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="acw.html">Assignment</a></li>
+	<li><a href="blog.html">Blog</a></li>
+	
+</ul>
+</nav>
+</header>
+</div>
+    
+<!-- END OF HEADER -->      
+    
+<div class="container">
+
+<main>    
+  
+<!-- UNSLIDER -->
+    
+<div class="banner">
+    <ul>
+        <li><img src="media/images/seal.png" alt="Photo of a Seal in Cornwall"></li>
+        <li><img src="media/images/keys.png" alt="photo of a laptop keyboard"></li>
+        <li><img src="media/images/town.png" alt="photo of a Norweigan town"></li>
+        <li><img src="media/images/water.png" alt="photo of water droplets on a wooden bannister"></li>
+    </ul>
+</div>
+    
+<!-- END OF UNSLIDER -->
+<article id="content">
+<h1>Photographer, Gamer, Techie...</h1>
+<img src="media/images/me.png" title="Portrait of me" alt="A portrait of me" width="181" height="290">
+<p>Thanks for your time! Hello, i'm Ross Taylor. I particularily enjoy pretending to be a photographer as well as occasionally painting with pixels, saving the world from various threats and blasting a ball into some netting. I am a 20 year old digital media student from a small town caled Rochdale, origin of the cooperative and the word 'cruckle'. If you like what you see please dont hesitate to contact me!</p>
+</article>
+<a href="#top"><p class="skip">back to the top</p></a>
+</main>
+
+<!-- FOOTER -->
+
+<div class= "endwrapper">
+    
+<footer>
+    
+<!-- SOCIAL MEDIA -->
+   
+<ul class="socialm">
+    <li><a href="https://www.facebook.com/cipurs"><img src="media/images/facebook/png/FB-f-Logo__blue_72.png" alt="Facebook logo" width='40' height='40'></a></li>
+    <li><a href="https://twitter.com/Cipurs"><img src="media/images/twitterlogo.png" alt="Twitter logo" width='40' height='40'></a></li>
+    <li><a href="https://www.linkedin.com/profile/view?id=AAMAABaTj6IB_qtAa99bBMfkcOLWVuU64EdSjt8&trk=hp-identity-name"><img src="media/images/linkedinlogo.png" alt="LinkedIn logo" width='40' height='40'></a></li>
+    <li><a href="mailto:ross.taylor@live.com"><img src="media/images/email.png" alt="Email logo" width="40" height="40"></a></li>
+</ul>
+
+<!-- END OF SOCIAL MEDIA -->    
+    
+    <ul class= "legal">
+        <li><a href="index.html">Ross Taylor &copy;2015</a></li>
+        <li><a href="http://www2.mmu.ac.uk/">MMU 2015</a></li>
+        <li><a href="http://www2.mmu.ac.uk/legal/">Legal Notice</a></li>
+        <li><a href="https://validator.w3.org/nu/#textarea">HTML5 Validation</a></li>
+        <li><a href="mailto:r.eskins@mmu.ac.uk">Tutor</a></li>
+    </ul>
+</footer>
+</div>
+</div>
+
+<!-- START OF UNSLIDER OPTIONS -->
+    
+<script>
+    $(document).ready(function(){
+        $('.banner').unslider({
+        speed: 500,               //  The speed to animate each slide (in milliseconds)
+        delay: 4500,              //  The delay between slide animations (in milliseconds)
+        complete: function() {},  //  A function that gets called after every slide animation
+        keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+        dots: true,               //  Display dot navigation
+        fluid: true              //  Support for responsive design.
+        });
+     });
+</script>
+    
+<!-- END OF UNSLIDER OPTIONS -->    
+    
+</body>
+
+
+</html>

@@ -1,0 +1,266 @@
+/* GOOGLE FONTS */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+span
+{
+    font-size: 1.6rem;
+}
+
+body
+{
+    background-image: url(media/images/bg.png);
+}
+
+/* Header style */
+
+.wrapper
+{
+    max-width: 100%;
+    background-color: rgba(255,255,255,0.90);
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+}
+
+#top
+{
+    font-size: 0.1rem;
+    overflow: hidden;
+    display: inline-block;
+    color: rgba(255,255,255,0.9);
+}
+
+#logo a:hover, a:active, a:focus
+{
+    background-color: none;
+}
+
+#logo
+{
+    margin-left:10%;
+    padding-top:2%;
+    display: inline-block;
+
+
+}
+
+nav
+{
+    position: relative;
+    bottom:3rem;
+    display: inline-block;
+    width: 60%;
+    font-size: 2.4rem;
+
+}
+
+nav ul
+{
+
+
+}
+
+nav li
+{
+    list-style: none;
+    display: inline;
+    padding: 2%;
+
+}
+
+nav a, a:visited
+{
+    color: #000;
+}
+
+nav a:hover, a:active
+{
+    color: #fff;
+    background-color: #000;
+}
+
+/* END OF HEADER STYLE */
+
+/* UNSLIDER STYLE */
+
+@import url("http://unslider.com/style.css");
+
+.banner
+{
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    margin-right:6%;
+}
+
+.banner li
+{
+    list-style: none;
+}
+
+.banner ul li
+{
+    float: left;
+}
+
+/* END OF UNSLIDER STYLE */
+
+/* MAIN CONTENT STYLE */
+
+main
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+}
+
+h1, p
+{
+    padding: 2%;
+}
+
+h1
+{
+    font-size: 2.7rem;
+}
+
+p
+{
+    font-size: 1.5rem;
+}
+
+article
+{
+    margin: 4% auto;
+    border: 2px solid #fff;
+    background-color: rgba(255,255,255,0.90);
+    overflow: hidden;
+    max-width: 70%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+article p
+{
+
+    padding: 2%;
+}
+
+article img
+{
+    float:left;
+    max-width:100%;
+    max-height: auto;
+    padding: 2%;
+}
+
+article a:link, a:visited
+{
+color: #6666ff;
+}
+
+article a:hover, a:active
+{
+    color: #fff;
+    background-color: #000;
+}
+.skip
+{
+    text-align: center;
+}
+
+.skip  a, a:visited
+{
+    color:#000;
+}
+
+.skip a:hover, a:active
+{
+      color: #fff;
+    background-color: #000;
+}
+
+/* END OF MAIN CONTENT STYLE */
+
+/* FOOTER STYLE */
+
+.endwrapper
+{
+    display: inline-block;
+    max-width: 100%;
+    height: 10%;
+    overflow:hidden;
+    background-color: rgba(255,255,255,0.90);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+footer
+{
+    text-align: center;
+}
+
+.socialm
+{
+
+}
+
+.socialm ul
+{
+    list-style: none;
+}
+
+.socialm li
+{
+    display: inline;
+    padding: 2%;
+}
+
+.legal
+{
+
+}
+
+.legal ul
+{
+    list-style: none;
+}
+
+.legal li
+{
+    display: inline;
+    padding: 1%;
+}
+
+.legal li:first-child::before
+{
+    display:none;
+}
+
+
+.legal li::before
+{
+    content: "•";
+    padding: 2%;
+}
+
+.legal a, a:visited
+{
+    color: #000;
+}
+
+/* END OF FOOTER STYLE */
+
+a
+{
+    text-decoration: none;
+}

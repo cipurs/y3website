@@ -1,0 +1,8 @@
+{
+  "name": "Uniprojct",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0"
+  }
+}
