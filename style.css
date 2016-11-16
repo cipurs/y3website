@@ -13,6 +13,7 @@ html
     font-family: 'Ubuntu', sans-serif;
     height: 100%;
 }
+
 .container
 {
     overflow-y:hidden;
@@ -22,22 +23,21 @@ html
 /* Start of main style */
 body
 {
-  font-size: 2rem;
+    font-size: 2rem;
     background-image: url("media/images/bg.png");
-    height:100%;
+    height:100vh;
     padding-bottom: 10rem;
     position: relative;
 }
-p,h1,h2,h3,h4,span{
-    
-text-align: left;
-}
+
+/* div border fix */
 .clear:after
 {
     clear:both;
     display: table;
     content:'';
 }
+
 .content
 {
     max-width: 1020px;
@@ -45,29 +45,43 @@ text-align: left;
     text-align: center;
     margin-bottom: 2rem;
 }
-.content article{
+
+.content article
+{
     text-align: left;
     display:flex;
     justify-content: flex-start;
-    
 }
+
 .content article img
 {
     margin-right:3rem;
 }
+
+.skip
+{
+    display: none;
+}
+
+.top
+{
+    display: none;
+}
+
 header
 {
     background-color: rgb(0,0,0);
     width:100%;
-    
-    
+    max-height: 27rem;
 }
+
 header .content
 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 header .content img
 {
     float: right;
@@ -80,9 +94,12 @@ header .content img
     display:block;
     float: left;
     top:0;
-    
 }
-.social-media{
+
+/* z-index used to give the style a higher importance */
+
+.social-media
+{
     width:100%;
     z-index: 2;
 }
@@ -94,7 +111,6 @@ header .content img
     -ms-transition: transform 1s;
     -moz-transition: transform 1s;
     -webkit-transition: transform 1s;
- 
 }
 
 .social-media img:hover
@@ -110,8 +126,7 @@ nav
 {
     width:100%;
     text-align: center;
-    display: inline;
-    
+    display: inline;   
 }
 
 nav ul
@@ -151,7 +166,8 @@ nav ul a:hover
     color: rgb(0,221,0)
 }
 
-nav ul a:active{
+nav ul a:active
+{
     color:rgb(0,221,0);
 }
 
@@ -164,26 +180,28 @@ nav ul a:active{
 .hero img
 {
     float:left;
-margin-bottom:5rem;
+    margin-bottom:5rem;
 }
 
 .banner
 {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 0rem 0;
     position: relative;
     overflow:hidden;
 }
 
-  .overlay
-    {
-        position: absolute;
-        bottom: 50px;
-        left: 0;
-        width: 100%;
-        background: rgba(0,0,0,0.8);
-        padding:2rem 1rem;
-        color:rgb(255,255,255);
-    }
+.overlay
+{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding:2rem 1rem;
+    text-align: left;
+    color:rgb(255,255,255);
+}
+
 .overlay h1
 {
     text-align:left;
@@ -196,15 +214,28 @@ h1
     margin-bottom: 0.5rem;
 }
 
-.project{
+.project
+{
     padding: 1rem 0 5rem 0;
     display: relative;
     max-width: 1020px;
 }
-.project a img{
+
+.project a img
+{
     float:left;
     width:33%;
     margin:0.1rem;
+}
+
+.caseinfo
+{
+    margin: 2rem 0 3rem 0;
+    line-height: 4rem;
+    border-radius: 25px;
+    background-color: rgba(0,221,0,0.05);
+    border: 2px solid rgba(0,221,0,0.4);
+    padding: 11px;
 }
 
 .case .project img 
@@ -214,16 +245,20 @@ h1
     margin: 0.1rem;
 }
 
-article{
+article
+{
     padding: 1rem 0 0 0;
 }
 
-article img{
+article img
+{
     display:inline-block;
     align-items: left;
+    min-width:30%;
 }
 
-article .ainfo{
+article .ainfo
+{
     display:inline-block;
     align-items: right;
 }
@@ -231,6 +266,48 @@ article .ainfo{
 .blogs
 {
     margin: 0 0 2rem 0;
+}
+
+.about 
+{
+    margin-bottom: 2rem;
+    max-width: 60rem;
+    display:inline-block;
+    line-height: 4rem;
+    border-radius: 25px;
+    background-color: rgba(0,221,0,0.05);
+    border: 2px solid rgba(0,221,0,0.4);
+    padding: 11px;
+}
+
+hr
+{
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+    margin: 2rem 0 2rem 0;
+}
+
+.post
+{
+    text-align: left;
+    line-height: 3rem;
+}
+
+.post img
+{
+    width: 100%;
+    height:auto;
+}
+
+.post h1
+{
+    line-height: 4rem;
+}
+
+.post h2
+{
+    margin-bottom: 1rem;
 }
 
 footer
@@ -242,9 +319,9 @@ footer
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 100%;
-    
+    width: 100%;    
 }
+
 footer a
 {
     text-decoration: none;
@@ -288,9 +365,10 @@ footer a:hover
         flex-direction: column;
         width: 100%;
     }
-    .sub img{
-        min-width: 90%;
-        
+    
+    .sub img
+    {
+        min-width: 90%;        
     }
 }
 
@@ -305,11 +383,22 @@ footer a:hover
     .project a img{
         width:49%;
     }
+    
     .content article
     {
         flex-wrap: wrap;
+        margin: 0.5rem 1rem 0.5rem 1rem;
     }
     
+    .post h2
+    {
+        margin: 0.5rem 2rem 0.5rem 2rem;
+    }
+    
+    .post p
+    {
+        margin: 0.5rem 2rem 0.5rem 2rem;
+    }
 }
 
 /*Query for Mobile */
@@ -323,8 +412,7 @@ footer a:hover
     nav ul
     {
         display: flex;
-        flex-direction: row;
-        
+        flex-direction: row;    
     }
     
     nav li
@@ -344,7 +432,7 @@ footer a:hover
     
     header .content a img
     {
-    top:34px;
+    top:20px;
     }
     
     .content
@@ -352,10 +440,11 @@ footer a:hover
         margin-bottom: 0;
     }
     
-    .social-media{
+    .social-media
+    {
         display: flex;
         justify-content: center;
-        margin:1rem 0;
+        margin:0 0 1rem 0;
         flex-direction: row-reverse
     }
     
@@ -367,28 +456,37 @@ footer a:hover
     
     .banner
     {
-        margin: 0 0 0.2rem 0;
-      
-        
+        margin: 0 0 0.2rem 0;    
     }
 }
+
+
 @media only screen and (max-width:608px)
 {
     .content article
     {
         justify-content: center;
     }
+    
     .content article img
     {
         margin:1rem;
     }
-    .ainfo
-    {
-        margin-right:10rem;
-    }
+    
     .overlay
     {
         font-size: 1.6rem;
+    }
+    
+    .case .project img 
+    {
+        float: left;
+        width:auto;
+        margin: 0.1rem;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -401,19 +499,23 @@ footer a:hover
         /*min-width: 508px;*/
         overflow: hidden;
         align-items: center;
-          position: relative;
+        position: relative;
         right:calc(92px  5vw);
     }
   
-    .project a img{
+    .project a img
+    {
         width:100%;
     }
-    .project{
+    
+    .project
+    {
         display: flex;
         justify-content:center;
         align-items: center;
         flex-wrap: wrap;
     }
+    
     .overlay
     {
         font-size: 1.3rem;
